@@ -17,8 +17,176 @@
       </div>
     </section>
     <section class="featured-products text-center">
-      <span class="title"> Featured Products </span>
-      <div class="products">swiper</div>
+      <div class="title">
+        <span> Featured Products </span>
+      </div>
+      <div class="products position-relative">
+        <b-row>
+          <b-col md="10" offset-md="1">
+            <swiper :options="swiperOption" class="swiper">
+              <swiper-slide>
+                <b-card class="swiper-card" no-body>
+                  <b-card-header>
+                    <span class="swiper-card-title"> ICEWAYS </span>
+                  </b-card-header>
+                  <b-card-body>
+                    <p class="swiper-card-desc">
+                      City life is changing. So are the habits of urban
+                      citizens. 4X4 cars that were previously used only on
+                      challenging lands are now preferred for urban use.
+                    </p>
+                    <b-row>
+                      <b-col cols="6" lg="6" style="padding-right: 3px">
+                        <b-button variant="outline-danger" block>
+                          LEARN MORE
+                        </b-button>
+                      </b-col>
+                      <b-col cols="6" lg="6" style="padding-left: 3px">
+                        <b-button variant="danger" block>
+                          FIND A DEALER
+                        </b-button>
+                      </b-col>
+                    </b-row>
+                  </b-card-body>
+                </b-card>
+              </swiper-slide>
+              <swiper-slide>
+                <b-card class="swiper-card" no-body>
+                  <b-card-header>
+                    <span class="swiper-card-title"> Driveways Sport </span>
+                  </b-card-header>
+                  <b-card-body>
+                    <p class="swiper-card-desc">
+                      Driveways is a ‘’Comfort tyre’’ developed for a
+                      considerably wide vehicle pool ranging from middle class
+                      sedans to upper class comfort automobiles.
+                    </p>
+                    <b-row>
+                      <b-col cols="6" lg="6" style="padding-right: 3px">
+                        <b-button variant="outline-danger" block>
+                          LEARN MORE
+                        </b-button>
+                      </b-col>
+                      <b-col cols="6" lg="6" style="padding-left: 3px">
+                        <b-button variant="danger" block>
+                          FIND A DEALER
+                        </b-button>
+                      </b-col>
+                    </b-row>
+                  </b-card-body>
+                </b-card>
+              </swiper-slide>
+              <swiper-slide>
+                <b-card class="swiper-card" no-body>
+                  <b-card-header>
+                    <span class="swiper-card-title">
+                      Driveways COMPETUS H/P
+                    </span>
+                  </b-card-header>
+                  <b-card-body>
+                    <p class="swiper-card-desc">
+                      City life is changing. So are the habits of urban
+                      citizens. 4X4 cars that were previously used only on
+                      challenging lands are now preferred for urban use.
+                    </p>
+                    <b-row>
+                      <b-col cols="6" lg="6" style="padding-right: 3px">
+                        <b-button variant="outline-danger" block>
+                          LEARN MORE
+                        </b-button>
+                      </b-col>
+                      <b-col cols="6" lg="6" style="padding-left: 3px">
+                        <b-button variant="danger" block>
+                          FIND A DEALER
+                        </b-button>
+                      </b-col>
+                    </b-row>
+                  </b-card-body>
+                </b-card>
+              </swiper-slide>
+              <swiper-slide>
+                <b-card class="swiper-card" no-body>
+                  <b-card-header>
+                    <span class="swiper-card-title"> ICEWAYS </span>
+                  </b-card-header>
+                  <b-card-body>
+                    <p class="swiper-card-desc">
+                      City life is changing. So are the habits of urban
+                      citizens. 4X4 cars that were previously used only on
+                      challenging lands are now preferred for urban use.
+                    </p>
+                    <b-row>
+                      <b-col cols="6" lg="6" style="padding-right: 3px">
+                        <b-button variant="outline-danger" block>
+                          LEARN MORE
+                        </b-button>
+                      </b-col>
+                      <b-col cols="6" lg="6" style="padding-left: 3px">
+                        <b-button variant="danger" block>
+                          FIND A DEALER
+                        </b-button>
+                      </b-col>
+                    </b-row>
+                  </b-card-body>
+                </b-card>
+              </swiper-slide>
+              <swiper-slide>
+                <b-card class="swiper-card" no-body>
+                  <b-card-header>
+                    <span class="swiper-card-title"> ICEWAYS </span>
+                  </b-card-header>
+                  <b-card-body>
+                    <p class="swiper-card-desc">
+                      City life is changing. So are the habits of urban
+                      citizens. 4X4 cars that were previously used only on
+                      challenging lands are now preferred for urban use.
+                    </p>
+                    <b-row>
+                      <b-col cols="6" lg="6" style="padding-right: 3px">
+                        <b-button variant="outline-danger" block>
+                          LEARN MORE
+                        </b-button>
+                      </b-col>
+                      <b-col cols="6" lg="6" style="padding-left: 3px">
+                        <b-button variant="danger" block>
+                          FIND A DEALER
+                        </b-button>
+                      </b-col>
+                    </b-row>
+                  </b-card-body>
+                </b-card>
+              </swiper-slide>
+            </swiper>
+          </b-col>
+        </b-row>
+        <div class="prev-button d-lg-block d-sm-none">
+          <b-button variant="primary">
+            <b-icon
+              icon="arrow-left"
+              font-scale="1.5"
+              class="text-white"
+              style="vertical-align: middle"
+            ></b-icon>
+          </b-button>
+        </div>
+        <div class="next-button d-lg-block d-sm-none">
+          <b-button variant="primary">
+            <b-icon
+              icon="arrow-right"
+              style="vertical-align: middle"
+              font-scale="1.5"
+              class="text-white"
+            ></b-icon>
+          </b-button>
+        </div>
+      </div>
+      <div class="pagination-swiper text-center">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </section>
     <section class="videos">
       <b-container fluid>
@@ -62,7 +230,57 @@
 </template>
 
 <script>
+import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
+
+// import style (>= Swiper 6.x)
+import "swiper/swiper-bundle.css";
+
+// import style (<= Swiper 5.x)
+
 export default {
+  components: { Swiper, SwiperSlide },
+  data() {
+    return {
+      swiperOption: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 12,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 50,
+          },
+          640: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 50,
+          },
+          480: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 50,
+          },
+          320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 30,
+          },
+        },
+      },
+    };
+  },
   layout: "Default",
 };
 </script>

@@ -5,7 +5,10 @@ $body_font_size: 14px;
 $body_font_weight: 600;
 $text_danger: #ed1c24 !important;
 $featured_products_bg: #f9f6f6;
+$outline_danger_btn_bg: #fde4e5;
+$primary_button_bg: #400e03;
 $videos_area_bg: #434448;
+$btn_danger_bg: #ed1c24;
 @import "header/header";
 
 body {
@@ -15,6 +18,12 @@ body {
 }
 .text-danger {
   color: $text_danger;
+}
+.btn-primary {
+  background-color: $primary_button_bg;
+  border: none !important;
+
+  border-radius: 0px !important;
 }
 .banner-area {
   @media (max-width: 992px) {
@@ -80,10 +89,124 @@ body {
 }
 .featured-products {
   background-color: $featured_products_bg;
-  padding: 72px;
+  padding: 0px 72px;
+  min-height: 518px;
+
+  @media (max-width: 992px) {
+    padding: 10px !important;
+    min-height: auto;
+  }
+  & .products {
+    border: 1px solid #000000;
+    @media (max-width: 992px) {
+      border: none !important;
+    }
+    & .prev-button {
+      position: absolute;
+
+      top: 40%;
+      .btn-primary {
+        height: 48px;
+        width: 48px;
+      }
+    }
+    .next-button {
+      position: absolute;
+      right: 0px;
+      top: 40%;
+      .btn-primary {
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
   & .title {
     font-size: 32px;
+    text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 48px;
+    padding-top: 72px;
+    @media (max-width: 992px) {
+      font-size: 24px !important;
+      text-align: left;
+      padding: 20px 10px;
+      margin-bottom: 0px;
+    }
+  }
+  & .swiper-card {
+    padding: 0px !important;
+    background: #fff !important;
+    border: 1px solid #e0d8d7;
+    border-bottom: 3px solid $btn_danger_bg;
+
+    border-radius: 2px !important;
+
+    & .card-header {
+      text-align: left;
+      padding-top: 24px;
+      border: none !important;
+      text-transform: uppercase;
+      background: #fff !important;
+      padding-bottom: 12px;
+    }
+    & .card-body {
+      padding: 10px !important;
+      padding-top: 0px !important;
+      padding-bottom: 13px !important;
+    }
+    & .btn-outline-danger {
+      border-radius: 0px !important;
+      background: $outline_danger_btn_bg;
+      border-color: $outline_danger_btn_bg;
+      font-weight: 700;
+      font-size: 12px;
+      color: #ed1c24;
+      padding: 14px;
+    }
+    & .btn-danger {
+      padding: 14px;
+      font-weight: 700;
+      font-size: 12px;
+      background: $btn_danger_bg;
+      border-radius: 0px !important;
+      border-color: $btn_danger_bg;
+    }
+    & .swiper-card-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    & .swiper-card-desc {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 0px;
+      line-height: 22.5px;
+      min-height: 88px;
+      @media (max-width: 1420px) {
+        min-height: 100px;
+      }
+    }
+  }
+}
+.pagination-swiper {
+  margin-top: 48px;
+  margin-bottom: 72px;
+  @media (max-width: 992px) {
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+  & ul {
+    padding: 0px !important;
+    margin: 0px !important;
+    list-style-type: none;
+    & li {
+      display: inline-block !important;
+      width: 12px;
+      height: 12px;
+      background-color: red !important;
+      border-radius: 50%;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
   }
 }
 .videos {
@@ -104,6 +227,7 @@ body {
     border-radius: 0px !important;
     font-weight: 700;
     font-size: 16px;
+    padding: 13px;
     margin-top: 40px;
     @media (max-width: 992px) {
       font-size: 12px;
