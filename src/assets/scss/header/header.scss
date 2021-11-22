@@ -21,6 +21,12 @@ $mobile_menu_item_border_color: #525252;
       cursor: pointer;
       padding: 0px 15px 0px 15px;
     }
+    & li{
+      @media (max-width: 1120px) {
+        padding-right: 0px !important;
+      }
+    }
+    
   }
 }
 .mobile-header-menu {
