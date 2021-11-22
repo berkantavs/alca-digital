@@ -2,7 +2,7 @@
   <div>
     <section class="banner-area">
       <div class="image">
-        <b-img src="~/../src/assets/images/Hero.png" fluid-grow></b-img>
+        <b-img src="~/../src/assets/images/hero.png" fluid-grow></b-img>
         <div class="image-content text-white text-center">
           <b-row no-gutters>
             <b-col cols="12" md="10" offset-md="1">
