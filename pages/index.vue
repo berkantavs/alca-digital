@@ -21,8 +21,8 @@
         <span> Featured Products </span>
       </div>
       <div class="products position-relative">
-        <b-row>
-          <b-col md="10" offset-md="1">
+        <b-row class="mr-0 ml-0">
+          <b-col md="10" offset-md="1" >
             <swiper :options="swiperOption" class="swiper">
               <swiper-slide>
                 <b-card class="swiper-card" no-body>
@@ -159,7 +159,7 @@
             </swiper>
           </b-col>
         </b-row>
-        <div class="prev-button d-lg-block d-sm-none">
+        <div class="prev-button d-none d-lg-block">
           <b-button variant="primary">
             <b-icon
               icon="arrow-left"
@@ -169,7 +169,7 @@
             ></b-icon>
           </b-button>
         </div>
-        <div class="next-button d-lg-block d-sm-none">
+        <div class="next-button d-none d-lg-block">
           <b-button variant="primary">
             <b-icon
               icon="arrow-right"

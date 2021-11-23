@@ -20,11 +20,25 @@ body {
   color: $text_danger;
 }
 .btn-primary {
-  background-color: $primary_button_bg;
+  background-color: $primary_button_bg !important;
   border: none !important;
-
+  outline: none !important;
+  box-shadow: none !important;
   border-radius: 0px !important;
 }
+.btn-primary:hover {
+  background-color: $primary_button_bg;
+  outline: none !important;
+}
+.btn-primary:focus {
+  background-color: $primary_button_bg;
+}
+
+.btn-primary:active:focus,
+.btn-primary:active {
+  background-color: $primary_button_bg;
+}
+
 .banner-area {
   @media (max-width: 992px) {
     padding: 0px !important;

@@ -32,7 +32,7 @@
             <b-col cols="5" class="text-right">
               <b-icon
                 v-b-toggle.sidebar-1
-                icon="list"
+                :icon="icon"
                 font-scale="2"
                 style="vertical-align: middle"
               ></b-icon>
@@ -47,6 +47,8 @@
       size="large"
       no-header
       shadow
+      @shown="changeIcon('show')"
+      @hidden="changeIcon('hide')"
       width="100%"
       sidebar-class="mobile-menu-sidebar"
     >
@@ -101,7 +103,7 @@
         </b-list-group-item>
         <b-list-group-item>
           <b-row>
-            <b-col cols="9" class="text-left"> GO WITH  </b-col>
+            <b-col cols="9" class="text-left"> GO WITH </b-col>
             <b-col cols="3" class="text-right">
               <b-icon
                 icon="chevron-right"
@@ -117,7 +119,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      icon: "list",
+    };
+  },
+  methods: {
+    changeIcon(val) {
+      if (val == "show") {
+        this.icon = "x";
+      } else if (val == "hidden") {
+        this.icon = "list";
+      } else {
+        this.icon = "list";
+      }
+      return this.icon;
+    },
+  },
+};
 </script>
 
 <style></style>
